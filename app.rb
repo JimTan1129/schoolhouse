@@ -17,6 +17,7 @@ def generate_student
   s.report_card.add_grade("english", rand(0..100))
   s.report_card.add_grade("science", rand(0..100))
   s
+  return student
 end
 
 
@@ -51,7 +52,8 @@ def find_exceptional(classroom)
   classroom.students.each { |key, value|
     total = 0
     value.report_card.grades.each do |key, value|
-      total = total + value
+      total = total +
+      puts "#{value.name}":
     end
     if total > 260
       puts "#{value.name}"
@@ -60,3 +62,4 @@ def find_exceptional(classroom)
 end
 
 find_exceptional(@B)
+find_failing(@A)
