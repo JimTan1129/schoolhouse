@@ -5,7 +5,7 @@ class Classroom
   # Constructor takes a name attribute and creates a hash that stores students
   def initialize(name)
     @name = name
-    @students = {}
+    @students = {} 
   end
 
   # Add student to students hash
